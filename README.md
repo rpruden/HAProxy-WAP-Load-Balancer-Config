@@ -11,3 +11,5 @@ prevent HAProxy from erroneously marking the destination server as up until the 
 To use this config, you will want to replace the strings "adfs.domain.com" and "wap.domain.com" with the domain name of your ADFS farm and WAP farm respectiely.
 
 This will tell the health check to connect to your WAP server's IP address without verifying SSL certificate and using SNI to indicate the proper ADFS hostname.
+
+Health checks are possible using whichever domain name you choose as long as you connect unsecured via port 80.
